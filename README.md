@@ -1,4 +1,5 @@
 # Marketplace
+![Vista-previa_marketplace](https://github.com/AnaNunezRejon/Marketplace-en-Angular17-DeliciaDesign/assets/140715043/5effeabe-4307-4f3b-a440-f1a2c5a7c68a)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
 
