@@ -1,0 +1,16 @@
+.color-barranavegacion{
+  background-color: var(--color-rosa);
+  font-weight: 500;
+}
+.boton-buscador{
+  color: white;
+  border-color: white;
+}
+.boton-buscador:hover{
+  background-color: var(--color-rosa);
+  border-color: white;
+}
+.navbar-brand{
+  color: white;
+  font-weight: 600px;
+}

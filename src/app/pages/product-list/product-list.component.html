@@ -1,0 +1,21 @@
+<div class="container ">
+  <section class="row g-3" style="margin-bottom: 4.5rem;">
+    <div class="my-2 mb-5" style="padding-top: 5rem;">
+      <select name="" id="" class="form-select" (change)="getCategory($event)">
+        <option value="">Selecciona una categoria</option>
+        @for(categoria of arrCategorias; track categoria.id){
+        <option [value]="categoria.titulo">{{categoria.titulo.toUpperCase()}}</option>
+        }
+      </select>
+    </div>
+    @for(producto of arrProductos; track producto.id){
+    <article class="col-12 col-md-6 col-lg-4">
+      <app-product-card [miProducto]="producto"></app-product-card>
+    </article>
+    }@empty {
+    <article>
+      <strong>NO HAY ARTICULOS DISPONIBLES</strong>
+    </article>
+    }
+  </section>
+</div>

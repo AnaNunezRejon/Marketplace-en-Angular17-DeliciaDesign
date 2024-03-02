@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="card-body">
+    <figure>
+      <img class="img-fluid imagen-card" [src]="'./assets/images/' + miProducto.foto " alt="">
+    </figure>
+    <div class="d-flex align-items-center justify-content-between mt-2 mb-3">
+      <h5 class="card-title">{{ miProducto.nombre }}</h5>
+      <p class="card-text">Precio: <strong>{{ miProducto.precio }}&euro;</strong></p>
+      <!-- <p class="card-text">Stock: <span [class.text-danger]="!miProducto.stock" [class.text-success]="miProducto.stock">{{ miProducto.stock ? 'DISPONIBLE': 'NO DISPONIBLE' }}</span></p> -->
+    </div>
+    <div class="d-flex justify-content-between mb-3">
+      <a [routerLink]="['/dashboard', 'producto', miProducto.id]" class="btn btn-primary boton-verdetalles">Ver
+        detalles</a>
+      <button class="btn boton-añadircarrito"
+        [ngClass]="{ 'btn-disabled': !miProducto.stock, 'btn-primary': miProducto.stock }"
+        [disabled]="!miProducto.stock" (click)="comprarProducto(miProducto)">
+        {{ miProducto.stock ? 'Comprar' : 'Agotado' }}
+      </button>
+    </div>
+  </div>
+</div>

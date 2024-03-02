@@ -1,0 +1,36 @@
+.boton-añadircarrito{
+  color: white;
+  border: 1px solid rgb(233, 55, 85);
+  background-color: rgb(233, 55, 85);
+  width: 50%;
+  border-radius: 3rem;
+}
+.boton-añadircarrito:hover{
+  border: 1px solid rgb(83, 27, 236);
+  background-color: rgb(83, 27, 236);
+}
+.boton-verdetalles{
+  color: rgb(83, 27, 236);
+  border: 1px solid rgb(83, 27, 236);
+  background-color: rgb(255, 255, 255);
+  border-radius: 3rem;
+}
+.boton-verdetalles:hover{
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(83, 27, 236);
+}
+.imagen-card{
+  border-radius: 2rem;
+}
+.btn-disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+.card {
+  border: none;
+  border-radius: 3rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
+}

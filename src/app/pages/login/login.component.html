@@ -1,0 +1,53 @@
+<main class="background-image">
+  <hr style="padding-top: 3rem;">
+  <div class="login">
+    <img src="../../../assets/images/login-bg.png" alt="login image" class="login__img">
+    <div class="navbar__logo-iniciosesion">
+      <h2 class="logo-iniciosesion1">Introduce tus datos para entrar</h2>
+    </div>
+    <div class="caja__formulario">
+      <form id="myForm" action="" class="login__form" autocomplete="off">
+        <h1 class="login__title">Inicia Sesión</h1>
+        <div class="login__content">
+          <div class="login__box-name">
+            <i class="fa-regular fa-user"></i>
+            <div class="login__box-inputname">
+              <input type="text" required class="login__input" id="login__name" name="login__name" placeholder=" ">
+              <label for="login-name" class="login__label">Nombre</label>
+            </div>
+          </div>
+          <div class="login__box">
+            <i class="fa-regular fa-envelope" style="color: white;"></i>
+            <div class="login__box-input">
+              <input type="email" required class="login__input" id="login-email" placeholder=" "
+                autocomplete="username">
+              <label for="login-email" class="login__label">Email</label>
+            </div>
+          </div>
+          <div class="login__box">
+            <i class="fa-solid fa-lock" style="color: white;"></i>
+            <div class="login__box-input">
+              <input type="password" required class="login__input" id="login-pass" autocomplete="current-password"
+                placeholder=" ">
+              <label for="login-pass" class="login__label">Contraseña</label>
+              <i class="login__eye fa-regular fa-eye" id="login-eye"></i>
+            </div>
+          </div>
+        </div>
+        <div class="login__check">
+          <div class="login__check-group">
+            <input type="checkbox" class="login__check-input" id="login-check">
+            <label for="login-check" class="login__check-label">Recuérdame</label>
+          </div>
+          <a href="#" class="login__forgot">¿Olvidaste la contraseña?</a>
+        </div>
+        <div class="boton__iniciarsesion ¡">
+          <button class="btn form__button" [routerLink]="['/dashboard']">Acceder</button>
+        </div>
+        <p class="login__register-registro">
+          ¿Aún no tienes una cuenta? <a href="./registro.html" class="login__login-registro">Regístrate</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</main>
